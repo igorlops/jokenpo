@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+    background-color: black;
+    color: white;
+}
+section#apresentacao{
+    margin: 50px auto;
+    text-align: center;
+
+}
+
+section#game{
+    text-align: center;
+}
+#game div.jogadores{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px auto;
+    max-width: 700px;
+}
+
+#game div.jogadores p{
+    margin: 5px 0;
+    font-size: 30px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color:  rgb(97, 97, 195);
+    border-radius: 10px;
+
+}
+
+.score{
+    display: flex;
+    position: relative;
+    z-index: 2;
+    font-size: 100px;
+    justify-content: center;
+    bottom: 100px;
+}
+#game .score span{
+    border: 1px solid #ccc;
+    width: 150px;
+    margin: 0 30px;
+    background-color: white;
+    color: black;
+}
+
+div.jogo h1{
+    margin: 50px 0;
+}
+div.jogo button{
+    padding: 10px;
+    border-radius: 50%;
+    background-color:  rgb(97, 97, 195);
+    border: none;
+    margin: 0px 10px 50px 10px;
+}
+div.jogo button:hover{
+    transition: 1s;
+    background-color:  rgb(48, 48, 202);
+    transform: rotate(360deg);
+}
+button img{
+    width: 100px;
+}
+
+section#vencedor{
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 30px;
+    background-color: rgb(97, 97, 195);
+}
+section#vencedor p.resultado{
+    text-align: center;
+    color: white;
+    font-size: 27px;
+}
